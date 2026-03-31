@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Carter — IT Portfolio | Konnekted Applicant</title>
+  <meta name="description" content="Alex Carter's digital portfolio — BTEC IT student applying for an IT apprenticeship at Konnekted." />
+
+  <!-- Google Fonts: Fraunces (display serif) + Plus Jakarta Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" id="navbar">
+    <div class="nav__inner">
+      <!-- Logo / Name -->
+      <a href="#home" class="nav__logo">AC<span class="nav__logo-dot">.</span></a>
+
+      <!-- Desktop links -->
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#qualifications" class="nav__link">Qualifications</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#interests" class="nav__link">Interests</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger (mobile) -->
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu overlay -->
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <ul class="nav__mobile-links">
+        <li><a href="#about" class="nav__mobile-link">About</a></li>
+        <li><a href="#qualifications" class="nav__mobile-link">Qualifications</a></li>
+        <li><a href="#experience" class="nav__mobile-link">Experience</a></li>
+        <li><a href="#projects" class="nav__mobile-link">Projects</a></li>
+        <li><a href="#interests" class="nav__mobile-link">Interests</a></li>
+        <li><a href="#contact" class="nav__mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO / HOME ===================== -->
+  <section class="hero" id="home">
+    <!-- Decorative background grid -->
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <!-- Left column: text -->
+      <div class="hero__text">
+        <p class="hero__greeting reveal-up">Hello, I'm</p>
+        <h1 class="hero__name reveal-up" style="--delay: 0.1s">
+          Alex<br /><em>Carter</em>
+        </h1>
+        <p class="hero__tagline reveal-up" style="--delay: 0.2s">
+          Aspiring IT Apprentice &mdash; BTEC Student
+        </p>
+        <p class="hero__intro reveal-up" style="--delay: 0.3s">
+          Passionate about building digital solutions, learning fast, and turning ideas into reality through code. Currently seeking an IT apprenticeship where I can grow alongside a forward-thinking team.
+        </p>
+        <div class="hero__actions reveal-up" style="--delay: 0.4s">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--outline">Get In Touch</a>
+        </div>
+      </div>
+
+      <!-- Right column: decorative card -->
+      <div class="hero__visual reveal-up" style="--delay: 0.3s" aria-hidden="true">
+        <div class="hero__card">
+          <div class="hero__card-badge">Open to Opportunities</div>
+          <div class="hero__card-avatar">AC</div>
+          <div class="hero__card-info">
+            <p class="hero__card-name">Alex Carter</p>
+            <p class="hero__card-role">BTEC IT Student</p>
+          </div>
+          <div class="hero__card-stats">
+            <div class="hero__stat">
+              <span class="hero__stat-num">3+</span>
+              <span class="hero__stat-label">Projects</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-num">2yr</span>
+              <span class="hero__stat-label">Course</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-num">D*</span>
+              <span class="hero__stat-label">Grade</span>
+            </div>
+          </div>
+          <div class="hero__card-skills">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">App Dev</span>
+          </div>
+        </div>
+        <!-- Floating accent blobs -->
+        <div class="hero__blob hero__blob--1"></div>
+        <div class="hero__blob hero__blob--2"></div>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <a href="#about" class="hero__scroll" aria-label="Scroll to About section">
+      <span>Scroll</span>
+      <i class="fa-solid fa-arrow-down"></i>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__label reveal-up">01 / About</div>
+      <div class="about__grid">
+
+        <!-- Left: text -->
+        <div class="about__text">
+          <h2 class="section__heading reveal-up">A little about<br /><em>who I am</em></h2>
+          <div class="about__body reveal-up">
+            <p>
+              I'm Alex Carter, an 18-year-old BTEC IT student from East London, currently completing my Level 3 Extended Diploma in Information Technology. From the moment I built my first webpage, I knew technology was where I wanted to be.
+            </p>
+            <p>
+              I'm applying for an IT apprenticeship at <strong>Konnekted</strong> because I believe real-world experience is the fastest way to grow as a developer. I'm a quick learner, a self-starter, and someone who takes pride in clean, purposeful work.
+            </p>
+            <p>
+              My goal is to build a career in web and software development — contributing to products that genuinely make a difference, while continuing to sharpen my technical skills alongside talented professionals.
+            </p>
+          </div>
+          <a href="#contact" class="btn btn--primary reveal-up">Work With Me</a>
+        </div>
+
+        <!-- Right: skills -->
+        <div class="about__skills reveal-up">
+          <h3 class="about__skills-title">Technical Skills</h3>
+          <div class="skills__list">
+            <div class="skill-bar" data-skill="HTML5 & CSS3" data-level="90">
+              <div class="skill-bar__label">
+                <span>HTML5 &amp; CSS3</span><span class="skill-bar__pct">90%</span>
+              </div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--w: 90%"></div></div>
+            </div>
+            <div class="skill-bar" data-skill="JavaScript" data-level="70">
+              <div class="skill-bar__label">
+                <span>JavaScript</span><span class="skill-bar__pct">70%</span>
+              </div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--w: 70%"></div></div>
+            </div>
+            <div class="skill-bar" data-skill="App Development" data-level="65">
+              <div class="skill-bar__label">
+                <span>App Development</span><span class="skill-bar__pct">65%</span>
+              </div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--w: 65%"></div></div>
+            </div>
+            <div class="skill-bar" data-skill="Scratch / Visual Programming" data-level="85">
+              <div class="skill-bar__label">
+                <span>Scratch / Visual Programming</span><span class="skill-bar__pct">85%</span>
+              </div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--w: 85%"></div></div>
+            </div>
+            <div class="skill-bar" data-skill="IT Support & Networking" data-level="60">
+              <div class="skill-bar__label">
+                <span>IT Support &amp; Networking</span><span class="skill-bar__pct">60%</span>
+              </div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--w: 60%"></div></div>
+            </div>
+            <div class="skill-bar" data-skill="MS Office / G Suite" data-level="80">
+              <div class="skill-bar__label">
+                <span>MS Office / G Suite</span><span class="skill-bar__pct">80%</span>
+              </div>
+              <div class="skill-bar__track"><div class="skill-bar__fill" style="--w: 80%"></div></div>
+            </div>
+          </div>
+
+          <!-- Soft skills tags -->
+          <h3 class="about__skills-title" style="margin-top: 2rem;">Soft Skills</h3>
+          <div class="tags-group">
+            <span class="tag tag--outlined">Problem Solving</span>
+            <span class="tag tag--outlined">Communication</span>
+            <span class="tag tag--outlined">Teamwork</span>
+            <span class="tag tag--outlined">Adaptability</span>
+            <span class="tag tag--outlined">Attention to Detail</span>
+            <span class="tag tag--outlined">Time Management</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== QUALIFICATIONS ===================== -->
+  <section class="section quals" id="qualifications">
+    <div class="container">
+      <div class="section__label reveal-up">02 / Qualifications</div>
+      <h2 class="section__heading reveal-up">BTEC IT<br /><em>Course Units</em></h2>
+      <p class="section__sub reveal-up">
+        Currently completing the <strong>BTEC Level 3 National Extended Diploma in Information Technology</strong> at East London College of Technology. Below are selected units and achievements.
+      </p>
+
+      <div class="quals__grid">
+
+        <!-- Unit 1 -->
+        <div class="qual-card reveal-up" style="--delay: 0s">
+          <div class="qual-card__header">
+            <span class="qual-card__unit">Unit 1</span>
+            <span class="qual-card__grade grade--distinction">D*</span>
+          </div>
+          <h3 class="qual-card__title">Principles of Computer Science</h3>
+          <p class="qual-card__desc">Explored core computing concepts including binary, data representation, logic gates, and computational thinking. Developed strong analytical skills for approaching technical problems systematically.</p>
+          <div class="qual-card__topics">
+            <span class="tag">Binary & Hex</span>
+            <span class="tag">Logic Gates</span>
+            <span class="tag">Algorithms</span>
+          </div>
+        </div>
+
+        <!-- Unit 2 -->
+        <div class="qual-card reveal-up" style="--delay: 0.05s">
+          <div class="qual-card__header">
+            <span class="qual-card__unit">Unit 2</span>
+            <span class="qual-card__grade grade--distinction">D</span>
+          </div>
+          <h3 class="qual-card__title">Fundamentals of Computer Systems</h3>
+          <p class="qual-card__desc">Gained in-depth knowledge of hardware components, operating systems, and how software interacts with physical systems. Completed practical tasks involving PC assembly and OS installation.</p>
+          <div class="qual-card__topics">
+            <span class="tag">Hardware</span>
+            <span class="tag">OS Theory</span>
+            <span class="tag">Networking</span>
+          </div>
+        </div>
+
+        <!-- Unit 3 -->
+        <div class="qual-card qual-card--featured reveal-up" style="--delay: 0.1s">
+          <div class="qual-card__header">
+            <span class="qual-card__unit">Unit 3</span>
+            <span class="qual-card__grade grade--distinction">D*</span>
+          </div>
+          <h3 class="qual-card__title">A Digital Portfolio <em>(this site!)</em></h3>
+          <p class="qual-card__desc">Designed, created, and published a fully functional digital portfolio to showcase achievements to potential employers. Applied the full project lifecycle: design, develop, test, and review. This very website is the deliverable for this unit.</p>
+          <div class="qual-card__topics">
+            <span class="tag">Web Design</span>
+            <span class="tag">HTML/CSS/JS</span>
+            <span class="tag">UX</span>
+            <span class="tag">Project Lifecycle</span>
+          </div>
+        </div>
+
+        <!-- Unit 8 -->
+        <div class="qual-card reveal-up" style="--delay: 0.15s">
+          <div class="qual-card__header">
+            <span class="qual-card__unit">Unit 8</span>
+            <span class="qual-card__grade grade--merit">M</span>
+          </div>
+          <h3 class="qual-card__title">Mobile App Development</h3>
+          <p class="qual-card__desc">Designed and built a functional mobile application using MIT App Inventor. Covered UI/UX design principles, event-driven programming, and iterative testing. Produced a working prototype with multiple screens and a live database.</p>
+          <div class="qual-card__topics">
+            <span class="tag">App Inventor</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">Databases</span>
+          </div>
+        </div>
+
+        <!-- Unit 13 -->
+        <div class="qual-card reveal-up" style="--delay: 0.2s">
+          <div class="qual-card__header">
+            <span class="qual-card__unit">Unit 13</span>
+            <span class="qual-card__grade grade--distinction">D</span>
+          </div>
+          <h3 class="qual-card__title">Website Development</h3>
+          <p class="qual-card__desc">Designed and built a multi-page website from scratch using HTML5, CSS3, and JavaScript. Followed the full development lifecycle, including client briefs, wireframing, development, and testing across multiple browsers and devices.</p>
+          <div class="qual-card__topics">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive</span>
+          </div>
+        </div>
+
+        <!-- Unit 17 -->
+        <div class="qual-card reveal-up" style="--delay: 0.25s">
+          <div class="qual-card__header">
+            <span class="qual-card__unit">Unit 17</span>
+            <span class="qual-card__grade grade--distinction">D*</span>
+          </div>
+          <h3 class="qual-card__title">Computer Programming</h3>
+          <p class="qual-card__desc">Developed programming skills using Scratch for visual programming concepts and moved into text-based logic. Created an interactive ERC (Educational Resource Creation) presentation demonstrating how computational thinking applies to everyday problems.</p>
+          <div class="qual-card__topics">
+            <span class="tag">Scratch</span>
+            <span class="tag">Visual Programming</span>
+            <span class="tag">ERC</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Predicted grade banner -->
+      <div class="quals__banner reveal-up">
+        <div class="quals__banner-text">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <div>
+            <strong>Predicted Overall Grade</strong>
+            <p>Distinction* Distinction* Distinction (D*D*D) — on track for top-tier result</p>
+          </div>
+        </div>
+        <div class="quals__banner-gpa">D*D*D</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WORK EXPERIENCE ===================== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__label reveal-up">03 / Experience</div>
+      <h2 class="section__heading reveal-up">Work<br /><em>Experience</em></h2>
+
+      <div class="timeline">
+
+        <!-- Job 1 -->
+        <div class="timeline__item reveal-up">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__meta">
+              <span class="timeline__date">June – July 2024</span>
+              <span class="timeline__type">Work Placement · 3 Weeks</span>
+            </div>
+            <h3 class="timeline__role">IT Support Assistant</h3>
+            <p class="timeline__company"><i class="fa-solid fa-building"></i> TechPlus Solutions Ltd, Stratford</p>
+            <p class="timeline__desc">
+              Completed a three-week placement supporting the internal IT team at a busy SME. Assisted with hardware diagnostics, software installations, and first-line helpdesk queries. Worked with ticketing systems and documented issues for escalation.
+            </p>
+            <ul class="timeline__bullets">
+              <li>Responded to and resolved 40+ helpdesk tickets over the placement period</li>
+              <li>Set up and configured 12 new workstations as part of an office refresh project</li>
+              <li>Assisted the network team in running cable and labelling patch panels</li>
+              <li>Produced a written handover report summarising recurring issues and fixes</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="tag">IT Support</span>
+              <span class="tag">Hardware</span>
+              <span class="tag">Helpdesk</span>
+              <span class="tag">Documentation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job 2: voluntary/part-time -->
+        <div class="timeline__item reveal-up">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <div class="timeline__meta">
+              <span class="timeline__date">Sept 2023 – Present</span>
+              <span class="timeline__type">Voluntary · Part-time</span>
+            </div>
+            <h3 class="timeline__role">Junior Tech Helper</h3>
+            <p class="timeline__company"><i class="fa-solid fa-building"></i> Eastside Community Centre, Hackney</p>
+            <p class="timeline__desc">
+              Volunteer role supporting elderly members of the community with digital literacy — teaching them to use smartphones, tablets, and basic internet services safely.
+            </p>
+            <ul class="timeline__bullets">
+              <li>Delivered one-to-one and small-group sessions every Saturday morning</li>
+              <li>Created simple, illustrated guides for common tasks (email, video calls, online banking)</li>
+              <li>Improved participants' confidence in using technology independently</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="tag">Digital Literacy</span>
+              <span class="tag">Communication</span>
+              <span class="tag">Community</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__label reveal-up">04 / Projects</div>
+      <h2 class="section__heading reveal-up">Featured<br /><em>Projects</em></h2>
+      <p class="section__sub reveal-up">A showcase of work completed during my BTEC IT course — each project demonstrates a different technical skill set.</p>
+
+      <!-- Project 1: Unit 13 Website -->
+      <div class="project-card project-card--large reveal-up">
+        <div class="project-card__visual project-card__visual--web" aria-hidden="true">
+          <!-- Browser chrome mockup -->
+          <div class="browser-mock">
+            <div class="browser-mock__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <div class="browser-mock__url">https://greenrootsnursery.co.uk</div>
+            </div>
+            <div class="browser-mock__body">
+              <div class="browser-mock__hero-bar"></div>
+              <div class="browser-mock__nav-bar"></div>
+              <div class="browser-mock__content">
+                <div class="browser-mock__col browser-mock__col--wide"></div>
+                <div class="browser-mock__col browser-mock__col--narrow">
+                  <div class="browser-mock__block"></div>
+                  <div class="browser-mock__block"></div>
+                  <div class="browser-mock__block"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta">
+            <span class="project-card__unit">Unit 13</span>
+            <span class="project-card__type">Website Development</span>
+          </div>
+          <h3 class="project-card__title">Green Roots Nursery</h3>
+          <p class="project-card__desc">
+            A fully responsive, multi-page business website designed for a fictional local plant nursery — built entirely from scratch with no frameworks. The brief required a professional online presence that could attract new customers and showcase the nursery's product range.
+          </p>
+          <div class="project-card__features">
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>5-page responsive site (Home, About, Shop, Gallery, Contact)</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>Custom CSS animations and hover interactions</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>JavaScript-powered product filter and lightbox gallery</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>Validated HTML5 / W3C compliant — tested on Chrome, Firefox, Safari</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>Semantic HTML with accessibility in mind (ARIA labels, alt text)</span>
+            </div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Responsive Design</span>
+            <span class="tag">CSS Grid</span>
+            <span class="tag">Flexbox</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Unit 8 App -->
+      <div class="project-card project-card--large project-card--reverse reveal-up">
+        <div class="project-card__visual project-card__visual--app" aria-hidden="true">
+          <!-- Phone mockup -->
+          <div class="phone-mock">
+            <div class="phone-mock__screen">
+              <div class="phone-mock__status"></div>
+              <div class="phone-mock__appbar">StudyBuddy</div>
+              <div class="phone-mock__card"></div>
+              <div class="phone-mock__card phone-mock__card--sm"></div>
+              <div class="phone-mock__card phone-mock__card--sm"></div>
+              <div class="phone-mock__btn"></div>
+            </div>
+          </div>
+          <div class="phone-mock phone-mock--back" aria-hidden="true">
+            <div class="phone-mock__screen">
+              <div class="phone-mock__status"></div>
+              <div class="phone-mock__appbar">My Subjects</div>
+              <div class="phone-mock__card"></div>
+              <div class="phone-mock__card"></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta">
+            <span class="project-card__unit">Unit 8</span>
+            <span class="project-card__type">Mobile App Development</span>
+          </div>
+          <h3 class="project-card__title">StudyBuddy — Revision App</h3>
+          <p class="project-card__desc">
+            A student revision and task management app built using MIT App Inventor. Designed to help GCSE and A-Level students track homework deadlines, create flashcards, and monitor their study progress across multiple subjects.
+          </p>
+          <div class="project-card__features">
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>4 fully functional screens with intuitive navigation</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>TinyDB local database for saving tasks between sessions</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>Countdown timer built with clock component events</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>Flashcard feature with randomised question shuffling</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>User-tested with 5 peers — iterative improvements made based on feedback</span>
+            </div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">MIT App Inventor</span>
+            <span class="tag">Event-Driven Logic</span>
+            <span class="tag">TinyDB</span>
+            <span class="tag">UI/UX Design</span>
+            <span class="tag">User Testing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Unit 17 Scratch -->
+      <div class="project-card project-card--large reveal-up">
+        <div class="project-card__visual project-card__visual--scratch" aria-hidden="true">
+          <!-- Scratch stage mockup -->
+          <div class="scratch-mock">
+            <div class="scratch-mock__header">
+              <i class="fa-solid fa-code"></i> Scratch Project
+            </div>
+            <div class="scratch-mock__stage">
+              <div class="scratch-mock__sprite scratch-mock__sprite--1">🤖</div>
+              <div class="scratch-mock__sprite scratch-mock__sprite--2">⭐</div>
+              <div class="scratch-mock__score">Score: <strong>2400</strong></div>
+            </div>
+            <div class="scratch-mock__blocks">
+              <div class="scratch-block scratch-block--event">when 🏴 clicked</div>
+              <div class="scratch-block scratch-block--motion">move 10 steps</div>
+              <div class="scratch-block scratch-block--control">if on edge, bounce</div>
+              <div class="scratch-block scratch-block--looks">say "Hello!" for 2 secs</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__meta">
+            <span class="project-card__unit">Unit 17</span>
+            <span class="project-card__type">Computer Programming</span>
+          </div>
+          <h3 class="project-card__title">CodeQuest — Interactive Learning Game</h3>
+          <p class="project-card__desc">
+            An educational Scratch game designed to teach younger pupils the basics of computational thinking. The project was accompanied by a formal ERC (Educational Resource Creation) presentation delivered to a group of Year 7 students as part of a school outreach day.
+          </p>
+          <div class="project-card__features">
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>Multi-level interactive quiz with score tracking and lives system</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>Custom sprites, backgrounds, and sound effects created for the project</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>Used variables, loops, conditions, and broadcast messaging in Scratch</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>ERC presentation covering loops, sequences, and selection for Y7 audience</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-check"></i>
+              <span>Received positive feedback from supervising teacher and 28 student participants</span>
+            </div>
+          </div>
+          <div class="project-card__stack">
+            <span class="tag">Scratch 3.0</span>
+            <span class="tag">Visual Programming</span>
+            <span class="tag">Game Design</span>
+            <span class="tag">Presentation Skills</span>
+            <span class="tag">ERC</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== INTERESTS & CLUBS ===================== -->
+  <section class="section interests" id="interests">
+    <div class="container">
+      <div class="section__label reveal-up">05 / Beyond College</div>
+      <h2 class="section__heading reveal-up">Clubs, Hobbies<br /><em>&amp; Interests</em></h2>
+
+      <div class="interests__grid">
+
+        <div class="interest-card reveal-up" style="--delay: 0s">
+          <div class="interest-card__icon"><i class="fa-solid fa-award"></i></div>
+          <h3 class="interest-card__title">Duke of Edinburgh Award</h3>
+          <p class="interest-card__desc">Currently working towards my Bronze DofE award. Completing sections in Volunteering (digital literacy sessions), Physical (regular gym training), and Skill (learning Python through online courses). The expedition section was completed in the Peak District.</p>
+          <span class="interest-card__badge">In Progress · Bronze</span>
+        </div>
+
+        <div class="interest-card reveal-up" style="--delay: 0.05s">
+          <div class="interest-card__icon"><i class="fa-solid fa-code"></i></div>
+          <h3 class="interest-card__title">Self-Directed Coding</h3>
+          <p class="interest-card__desc">Outside of college, I actively expand my skills through platforms like freeCodeCamp and Codecademy. Currently progressing through JavaScript algorithms and data structures. I build small personal projects to apply what I learn.</p>
+          <span class="interest-card__badge">freeCodeCamp · Codecademy</span>
+        </div>
+
+        <div class="interest-card reveal-up" style="--delay: 0.1s">
+          <div class="interest-card__icon"><i class="fa-solid fa-users"></i></div>
+          <h3 class="interest-card__title">College Tech Club</h3>
+          <p class="interest-card__desc">Active member of the college's Technology &amp; Innovation Club, where we explore emerging technologies, take part in hackathons, and collaborate on group projects. We recently took part in a 24-hour hackathon hosted by a local tech charity.</p>
+          <span class="interest-card__badge">Weekly · Thursdays</span>
+        </div>
+
+        <div class="interest-card reveal-up" style="--delay: 0.15s">
+          <div class="interest-card__icon"><i class="fa-solid fa-gamepad"></i></div>
+          <h3 class="interest-card__title">Game Development Hobby</h3>
+          <p class="interest-card__desc">Fascinated by how games are built. I've been experimenting with Godot Engine in my spare time, learning the basics of 2D game design and GDScript. Following game dev communities on YouTube and Reddit to stay inspired.</p>
+          <span class="interest-card__badge">Godot Engine · GDScript</span>
+        </div>
+
+        <div class="interest-card reveal-up" style="--delay: 0.2s">
+          <div class="interest-card__icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3 class="interest-card__title">Hardware Tinkering</h3>
+          <p class="interest-card__desc">I enjoy working with Raspberry Pi and Arduino kits to build small electronics projects. I've built a home weather station and an automated plant-watering system — combining coding with physical computing is incredibly satisfying.</p>
+          <span class="interest-card__badge">Raspberry Pi · Arduino</span>
+        </div>
+
+        <div class="interest-card reveal-up" style="--delay: 0.25s">
+          <div class="interest-card__icon"><i class="fa-solid fa-headphones"></i></div>
+          <h3 class="interest-card__title">Music Production</h3>
+          <p class="interest-card__desc">I produce beats in my spare time using FL Studio. This hobby has given me a keen eye for detail, patience in iterative processes, and an appreciation for creative problem-solving — all skills that transfer directly into software work.</p>
+          <span class="interest-card__badge">FL Studio · Creative</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__label reveal-up">06 / Contact</div>
+      <h2 class="section__heading reveal-up">Let's<br /><em>Connect</em></h2>
+      <p class="section__sub reveal-up">
+        Interested in offering me an apprenticeship opportunity at Konnekted? I'd love to hear from you. Send me a message below or reach out directly.
+      </p>
+
+      <div class="contact__grid">
+
+        <!-- Form -->
+        <div class="contact__form-wrap reveal-up">
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Apprenticeship Enquiry" />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me about the opportunity..." rows="5" required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span class="btn__text">Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact__info reveal-up">
+          <div class="contact__info-card">
+            <h3 class="contact__info-title">Direct Contact</h3>
+
+            <a href="mailto:alex.carter@email.com" class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <p class="contact__info-label">Email</p>
+                <p class="contact__info-value">alex.carter@email.com</p>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/alexcarter-it" target="_blank" rel="noopener" class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div>
+                <p class="contact__info-label">LinkedIn</p>
+                <p class="contact__info-value">linkedin.com/in/alexcarter-it</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/alexcarter-dev" target="_blank" rel="noopener" class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <p class="contact__info-label">GitHub</p>
+                <p class="contact__info-value">github.com/alexcarter-dev</p>
+              </div>
+            </a>
+
+            <div class="contact__info-item">
+              <div class="contact__info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <p class="contact__info-label">Location</p>
+                <p class="contact__info-value">East London, UK</p>
+              </div>
+            </div>
+
+            <!-- Availability badge -->
+            <div class="contact__availability">
+              <span class="contact__available-dot"></span>
+              <p>Available from <strong>September 2025</strong> — actively seeking apprenticeship opportunities</p>
+            </div>
+          </div>
+
+          <!-- Why Konnekted -->
+          <div class="contact__why">
+            <h3 class="contact__info-title">Why Konnekted?</h3>
+            <p>
+              I'm drawn to Konnekted because of your reputation for nurturing junior talent and working on genuinely impactful digital products. I want to be in an environment where I can learn from experienced developers, contribute from day one, and grow into a well-rounded IT professional.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="nav__logo">AC<span class="nav__logo-dot">.</span></span>
+          <p>Alex Carter — BTEC IT Portfolio<br />Built for a Konnekted Apprenticeship Application</p>
+        </div>
+        <div class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__social">
+          <a href="https://linkedin.com/in/alexcarter-it" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/alexcarter-dev" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:alex.carter@email.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Designed &amp; coded by Alex Carter &copy; 2025 &mdash; Unit 3: A Digital Portfolio, BTEC IT Level 3</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
